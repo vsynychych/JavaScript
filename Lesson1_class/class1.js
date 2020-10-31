@@ -101,20 +101,23 @@
 // alert(result);
 
 // Завдання 14
-let name=prompt("Введіть Імя:");
-let surname=prompt("_Введіть прізвище:");
-let age=prompt("Введіть ваш вік:");
-let result="  Доброго вечора "+name+ surname + ", мої вітання що вам " + parseInt(age);
-alert(result);
-
+// let name=prompt("Введіть Імя:");
+// let surname=prompt("_Введіть прізвище:");
+// let age=prompt("Введіть ваш вік:");
+// let result="  Доброго вечора "+name+ surname + ", мої вітання що вам " + parseInt(age);
+// alert(result);
+//
 
 
 // ДОДАТКОВІ
 // Завдання 1
-// let first=prompt("Введіть перше число:");
-// let second=prompt("Введіть друге число:");
-// let third=prompt("Введіть третє число:");
+// let first=+prompt("Введіть перше число:");
+// let second=+prompt("Введіть друге число:");
+// let third=+prompt("Введіть третє число:");
 //
-// if (first>second&&first>third){
-//     alert(first);
+// if (first>second && first>third) {
+//     console.log(first);
+// } else if (second>first && second>third) {
+//     console.log(second);
+// } else {(console.log(third));
 // }
