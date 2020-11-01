@@ -121,3 +121,38 @@
 //     console.log(second);
 // } else {(console.log(third));
 // }
+
+
+// Завдання 2
+// let color=prompt("Введіть колір світлофора:", "Зелений Червоний Жовтий Аварія");
+//
+// if (color === "Зелений"){
+//     alert("Йди!");
+// } else if (color === "Червоний"){
+//     alert("Стій!");
+// } else if(color==="Жовтий"){
+//     alert("Чекай!");
+// } else if(color==="Аварія"){
+//     alert("Роби що хочеш!")
+// }
+
+// Завдання 3
+// let color=prompt("Введіть колір світлофора:", "Зелений Червоний Жовтий Аварія");
+// let isRoadClear=confirm("Машини на дорозі є?");
+//
+// if (isRoadClear === true && color==="Зелений"){
+//     alert("Почекай поки порушники проїдуть!");
+// } else if (isRoadClear === false && color==="Зелений"){
+//     alert("Йди!");
+// } else if (isRoadClear === true && color==="Жовтий"){
+//     alert("Чекай!");
+// } else if (isRoadClear === false && color==="Жовтий"){
+//     alert("Все одно чекай!");
+// } else if (isRoadClear === true && color==="Червоний"){
+//     alert("Стій і Чекай!");
+// } else if (isRoadClear === false && color==="Червоний"){
+//     alert("Все одно стій!");
+// } else if(color==="Аварія"){
+//     alert("Роби що хочеш!")
+// } else {
+//     alert("Введи правильно слово!");}
