@@ -46,6 +46,7 @@
 
 
 
+
 // -- отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3,
 // змінює йому розмір тексту на 40 пікселів
 // let ashka=document.getElementsByTagName("a");
@@ -86,7 +87,7 @@
 // let sub=document.getElementsByClassName("sub-header");
 // for (let i = 0; i < sub.length; i++) {
 //     let subElement = sub[i];
-//     if (subElement==="content 2 segment"){
+//     if (subElement.innerText==="content 2 segment"){
 //         subElement.style.color=prompt();
 //     }
 // }
