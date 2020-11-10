@@ -43,7 +43,12 @@
 
 
 // -- отримує всі елементи 'a' та додає їм клас anchor
-
+// let ashka=document.getElementsByTagName("a");
+// for (let i = 0; i < ashka.length; i++) {
+//     let ashkaElement = ashka[i];
+//     ashkaElement.className="anchor";
+//     console.log(ashkaElement);
+// }
 
 
 
@@ -61,6 +66,14 @@
 
 
 // -- отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+// let ashka=document.getElementsByTagName("a");
+// for (let i = 0; i < ashka.length; i++) {
+//     let ashkaElement = ashka[i];
+//     let XXX=ashkaElement.textContent;
+//     XXX.textContent=`ashka${i+1}`;
+//     ashkaElement.className="element_"+XXX;
+//     console.log(ashkaElement);
+// }
 
 
 
