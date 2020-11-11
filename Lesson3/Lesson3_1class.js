@@ -46,7 +46,7 @@
 // let ashka=document.getElementsByTagName("a");
 // for (let i = 0; i < ashka.length; i++) {
 //     let ashkaElement = ashka[i];
-//     ashkaElement.className="anchor";
+//     ashkaElement.classList.add("anchor");
 //     console.log(ashkaElement);
 // }
 
@@ -66,22 +66,11 @@
 
 
 // -- отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
-// let ashka=document.getElementsByTagName("a");
-// for (let i = 0; i < ashka.length; i++) {
-//     let ashkaElement = ashka[i];
-//     let XXX=ashkaElement.textContent;
-//     XXX.textContent=`ashka${i+1}`;
-//     ashkaElement.className="element_"+XXX;
-//     console.log(ashkaElement);
-// }
-
-
-
-
-// let ashka=document.getElementsByTagName("a");
-// for (let i = 0; i < ashka.length; i++) {
-//     const ashkaElement = ashka[i];
-//     console.log(ashkaElement);
+// let ash=document.getElementsByTagName("a");
+// for (let i = 0; i < ash.length; i++) {
+//     let ashElement = ash[i];
+//     ashElement.classList.add("Element_"+ashElement.textContent);
+//     console.log(ashElement);
 // }
 
 
@@ -93,6 +82,7 @@
 //     const subElement = sub[i];
 //     subElement.style.backgroundColor=prompt();
 // }
+
 
 
 // -- отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment .
