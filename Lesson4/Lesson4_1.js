@@ -269,3 +269,44 @@
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
+
+
+
+// Створити функцію яка :
+//     - Додає в боді блок з текстом "Hello owu"
+// function text (){
+//     let div =document.createElement("div");
+//     document.body.appendChild(div);
+//     div.innerText="Hello owu";
+// }
+// text();
+
+
+// - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
+// function text (type,txt){
+//     let tag =document.createElement(type);
+//     document.body.appendChild(tag);
+//     tag.innerText=txt;
+// }
+// text("div","Hello owu")
+
+
+// - приймає масив автомобілів (можна взяти з попередніх дз ),
+// та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+// let arr=[{model:"passat", year:2000, ps:101, color:"black"},
+//     {model:"polo", year:2010, ps:90, color:"white"},
+//     {model:"amarok", year:2001, ps:118, color:"red"},
+//     {model:"jetta", year:2012, ps:200, color:"blue"},
+//     {model:"caddy", year:2003, ps:131, color:"green"},
+//     {model:"golf", year:2014, ps:250, color:"silver"},
+//     {model:"eos", year:2005, ps:101, color:"black"},
+//     {model:"scirocco", year:2016, ps:170, color:"yellow"},
+//     {model:"touran", year:2007, ps:118, color:"silver"},
+//     {model:"touareg", year:2018, ps:150, color:"black"},
+// ]
+
+
+//     Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
+// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+//     Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
+//     Для кожної властивості створити всередені блока автомоблія свій блок
