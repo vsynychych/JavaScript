@@ -560,7 +560,7 @@
 //         this.maxSpeed =maxSpeed|| 189;
 //         this.capacity =capacity|| 1.9;
 //     }
-//        drive(){
+//     drive(){
 //     console.log("їдемо зі швидкістю " + this.maxSpeed + " км на годину")
 //     };
 //     info(){
@@ -600,42 +600,82 @@
 
 // class Cinderella {
 //     constructor(name,age,footSize) {
-//
+//     this.name=name;
+//     this.age=age;
+//     this.footSize=footSize;
 //     }
-//
 // }
 // let cinderella1= new Cinderella("Tetiana",20,35);
-// let cinderella2={name:"Lola", age:24,footSize:38};
-// let cinderella3={name:"Karina", age:23,footSize:37};
-// let cinderella4={name:"Anastasia", age:27,footSize:36};
-// let cinderella5={name:"Olena", age:26,footSize:39};
-// let cinderella6={name:"Katrina", age:21,footSize:40};
-// let cinderella7={name:"Svitlana", age:22,footSize:38.5};
-// let cinderella8={name:"Oksana", age:18,footSize:36.5};
-// let cinderella9={name:"Marta", age:19,footSize:37.5};
-// let cinderella10={name:"Lidia", age:23,footSize:35.5};
-//
+// let cinderella2=new Cinderella("Lola",24,38);
+// let cinderella3=new Cinderella("Karina",23,37);
+// let cinderella4=new Cinderella("Anastasia",27,36);
+// let cinderella5=new Cinderella("Olena",26,39);
+// let cinderella6=new Cinderella("Katrina",21,39.5);
+// let cinderella7=new Cinderella("Svitlana",22,38.5);
+// let cinderella8=new Cinderella("Oksana",18,36.5);
+// let cinderella9=new Cinderella("Marta",19,37.5);
+// let cinderella10=new Cinderella("Lidia",23,35.5);
 //
 // let arr=[cinderella1,cinderella2,cinderella3,cinderella4,cinderella5,
 //     cinderella6,cinderella7,cinderella8,cinderella9,cinderella10];
-// console.log(arr);
-//
-//
-// class Prince{
-//     constructor(name, age,shoe) {
+// class Prince {
+//     constructor(name, age, shoe) {
+//         this.name = name;
+//         this.age= age;
+//         this.shoe = shoe;
+//         this.find=function (MyPrinces){
+//             for (let myPr of MyPrinces) {
+//                 if (this.shoe===myPr.footSize){
+//                     console.log("My princess is "+ myPr.name);
+//                 }
+//             }
+//         }
 //     }
 // }
+// let x=new Prince("Artur",23,36);
+// x.find(arr);
 
 
-
-
-// ==============================================
+// =====================================================================================================================
 //
 //
-//
-// ==============================================
+// =====================================================================================================================
 //     -створити функцію конструктор попелюшка з полями імя, вік, розмір ноги
 // --Створити 10 попелюшок , покласти їх в масив
-// --Сторити обєкт типу "принц" за допомоги функції конструктора з полями імя, вік, туфелька яку він знайшов, та функцію "пошук попелюшки"
+// --Сторити обєкт типу "принц" за допомоги функції конструктора з полями імя, вік, туфелька яку він знайшов,
+// та функцію "пошук попелюшки"
 // -- функція повинна приймати масив попелюшок, та шукає ту котра йому підходить
-// ==============================================
+
+// function Cinderella(name,age,footSize){
+//     this.name=name;
+//     this.age=age;
+//     this.footSize=footSize;
+// }
+// let cinderella1= new Cinderella("Tetiana",20,35);
+// let cinderella2=new Cinderella("Lola",24,38);
+// let cinderella3=new Cinderella("Karina",23,37);
+// let cinderella4=new Cinderella("Anastasia",27,36);
+// let cinderella5=new Cinderella("Olena",26,39);
+// let cinderella6=new Cinderella("Katrina",21,39.5);
+// let cinderella7=new Cinderella("Svitlana",22,38.5);
+// let cinderella8=new Cinderella("Oksana",18,36.5);
+// let cinderella9=new Cinderella("Marta",19,37.5);
+// let cinderella10=new Cinderella("Lidia",23,35.5);
+//
+// let arr=[cinderella1,cinderella2,cinderella3,cinderella4,cinderella5,
+//     cinderella6,cinderella7,cinderella8,cinderella9,cinderella10];
+//
+// function Prince(name,age,shoe){
+//     this.name=name;
+//     this.age=age;
+//     this.shoe=shoe;
+//     this.Find=function(MyPrinces){
+//         for (let MyPr of MyPrinces) {
+//             if (this.shoe===MyPr.footSize){
+//                 console.log("My princess is "+MyPr.name);
+//             }
+//         }
+//     }
+// }
+// let x=new Prince("Artur",23,35);
+// x.Find(arr);
