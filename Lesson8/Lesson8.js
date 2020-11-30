@@ -36,7 +36,6 @@
 //         localStorage.setItem(tag, ev.target.value)
 //
 //         byId.oninput = () => {
-//
 //             for (let element of byId) {
 //                 console.log(element);
 //                 let id = element.id
@@ -95,35 +94,114 @@
 //         }
 //     }
 //     if (index === "1") {
-//         return;
+//         return ;
 //     }
 //     area.value = localStorage.getItem(+index - 1);
 // }
 //
 // right.onclick = () => {
-//     let index;
+//     let index2;
 //     for (let key in localStorage) {
 //         if (localStorage.hasOwnProperty(key)) {
 //             if (localStorage.getItem(key) === area.value) {
-//                 index = key;
+//                 index2 = key;
 //             }
 //         }
 //     }
-//     if (index === localStorage.length.toString) {
+//     if (index2 === localStorage.length.toString) {
 //         return;
 //     }
-//     area.value = localStorage.getItem(+index + 1);
+//     area.value = localStorage.getItem(+index2 + 1);
 // }
+//
+// function set(tag) {
+//     tag.value = localStorage.getItem(tag);
+//     tag.oninput = (ev) => {
+//         console.log(ev.target.value);
+//         localStorage.setItem(tag, ev.target.value)
+//     }
+// }
+// set(area)
 
 
-
-// localStorage.clear()
 
 
 
 // - Реализуйте записную книгу, хранящую данные в локальном хранилище.
-//     Данные которые надо сохранять : ФИО, номер, почта, фирма, отдел, день рождения
+// Данные которые надо сохранять : ФИО, номер, почта, фирма, отдел, день рождения
 // Данные вводить через соответсвующую форму.
 // --Каждому контакту добавить кнопку для удаления контакта.
 // --Каждому контакту добавить кнопку редактироваиня. При нажати на нее появляется форма, в которой есть все
 // необходимые инпуты для редактирования, которые уже заполнены данными объекта
+//
+//
+// let content = document.getElementById("content");
+// let submit=document.getElementById("input7");
+// let form=document.forms.form0;
+//
+// submit.onclick=(ev)=> {
+//     let person={};
+//     ev.preventDefault();
+//     for (let i = 0; i < form.children.length; i++) {
+//         const element = form.children[i];
+//         if (element.name && element.type!=="submit") {
+//             person[element.name]=element.value;
+//         }
+//     }
+//     person.id=Math.random();
+//     // console.log(person);
+//     saveLS(person)
+//
+//
+// }
+// let arr="arr";
+// function saveLS(user){
+//     if (localStorage.hasOwnProperty(arr)){
+//         let array=JSON.parse(localStorage.getItem(arr));
+//         console.log(array);
+//         let find=array.find(value => value.id===user.id)
+//         if (find){
+//             let filter=array.filter(value => value.id!==user.id);
+//             filter.push(user)
+//             localStorage.setItem(arr,JSON.stringify(array));
+//         }
+//         array.push(user);
+//         localStorage.setItem(arr,JSON.stringify([user]))
+//     } else {
+//         localStorage.setItem(arr, JSON.stringify([user]))
+//     }
+//
+//
+// }
+//
+// function get(){
+//     if (localStorage.hasOwnProperty(arr)){
+//         let userParse=JSON.parse(localStorage.getItem(arr));
+//         for (let user of userParse) {
+//             content.appendChild(create(user));
+//         }
+//     }
+// }
+// get();
+//
+//
+// function create(user){
+//     let divElement=document.createElement("div");
+//     divElement.style.backgroundColor="green";
+//     divElement.style.width="200px";
+//     divElement.style.float="left";
+//     for (let key in user) {
+//         let p=document.createElement("p");
+//         p.innerText= key +" - " +user[key];
+//         divElement.appendChild(p);
+//     }
+//     return divElement;
+// }
+//
+//
+//
+
+// localStorage.clear();
+
+
+
