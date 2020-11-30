@@ -19,105 +19,51 @@
 //     Пользователь вводит какие-то данные и закрывает страницу (не факт, что он заполнил всю форму).
 // Сделайте так, чтобы при следующем заходе на страницу введенные им ранее данные стояли на своих местах.
 //     Сделайте ваш скрипт как можно более универсальным.
-let form = document.getElementById("form1");
-let text=document.getElementById("area0");
-// let input1=document.getElementById("input1");
-// let input2=document.getElementById("input2");
-// let input3=document.getElementById("input3");
-// let input4=document.getElementById("input4");
-// let input5=document.getElementById("input5");
-// let input6=document.getElementById("input6");
-text.value=localStorage.getItem("text");
-// input1.value=localStorage.getItem("input1");
-// input2.value=localStorage.getItem("input2")
-
-
-
-text.oninput=(ev)=>{
-    console.log(ev.target.value);
-    localStorage.setItem("text",ev.target.value)
-}
-// input1.oninput=(ev)=>{
-//     localStorage.setItem("input1",ev.target.value)
-// }
-
-// function set(tag){
-//     // console.log(tag);
-//
-//     text.oninput=(ev)=>{
-//     console.log(ev.target.value);
-//     localStorage.setItem("ext",ev.target.value)
-// }
-// }
-// set(form);
-
-// element.value=localStorage.getItem("text")
-// function get(){
-//     let xxx=
-// }
-// get();
-//
-
 
 // let form = document.getElementById("form1");
+// let area = document.getElementById("area0");
+// let input1 = document.getElementById("input1");
+// let input2 = document.getElementById("input2");
+// let input3 = document.getElementById("input3");
+// let input4 = document.getElementById("input4");
+// let input5 = document.getElementById("input5");
+// let input6 = document.getElementById("sel6");
 //
-// function set(byId) {
-//     byId.oninput = () => {
-//         console.log(byId);
-//         for (let element of byId) {
-//             console.log(element);
-//             let id = element.id
-//             console.log(id);
-//             let val = element.value
-//             console.log(val);
-//             localStorage.setItem(id, val)
-//             if (element.type === "checkbox" || element.type === "radio")
-//                 element.checked
-//                     ? element.value = true
-//                     : element.value = false
+// function set(byId, tag) {
+//     tag.value = localStorage.getItem(tag);
+//     tag.oninput = (ev) => {
+//         console.log(ev.target.value);
+//         localStorage.setItem(tag, ev.target.value)
+//
+//         byId.oninput = () => {
+//
+//             for (let element of byId) {
+//                 console.log(element);
+//                 let id = element.id
+//                 console.log(id);
+//                 let val = element.value
+//                 console.log(val);
+//                 localStorage.setItem(id, val)
+//                 if (element.type === "checkbox" || element.type === "radio")
+//                     element.checked
+//                         ? element.value = true
+//                         : element.value = false
+//                 if (localStorage.value==="true"){
+//                     element=element.setAttribute("checkbox","checked")
+//                 }
+//             }
 //         }
 //     }
 // }
 //
-// set(form);
+// set(form, area);
+// set(form, input1);
+// set(form, input2);
+// set(form, input3);
+// set(form, input4);
+// set(form, input5);
+// set(form, input6);
 
-
-
-
-
-// let form = document.getElementById("form1");
-//
-// function set(byId) {
-//     byId.oninput = () => {
-//         console.log(byId);
-//     }
-//     get();
-// }
-// set(form);
-//
-// function get(){
-//     for (let element of form ){
-//         let id=element.id;
-//         let val=element.value;
-//         localStorage.setItem(id, val);
-//     }
-// }
-
-
-
-
-
-// set(form);
-// let text=document.getElementById("area");
-// text.value=localStorage.getItem("text")
-// text.oninput=(ev)=>{
-//     console.log(ev.target.value);
-//     localStorage.setItem("text",ev.target.value)
-//         }
-//     }
-// }
-//
-// set(form);
 
 // localStorage.clear()
 
