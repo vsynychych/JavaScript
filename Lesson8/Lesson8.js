@@ -65,7 +65,7 @@
 // set(form, input6);
 
 
-// localStorage.clear()
+
 
 
 
@@ -75,7 +75,49 @@
 // Сверху над текстареа должны появится стрелочки, с помощью которых можно перемещаться по истории
 // (не забудьте!чекпоинт истории - нажатеи кнопки сохранить).
 //
+// let left= document.getElementById("left1");
+// let right=document.getElementById("right2");
+// let area=document.getElementById("area");
+// let save=document.getElementById("saveT");
+//
+//
+// save.onclick = (ev) => {
+//     localStorage.setItem(localStorage.length + 1, area.value);
+// }
+//
+// left.onclick = () => {
+//     let index;
+//     for (let key in localStorage) {
+//         if (localStorage.hasOwnProperty(key)) {
+//             if (localStorage.getItem(key) === area.value) {
+//                 index = key;
+//             }
+//         }
+//     }
+//     if (index === "1") {
+//         return;
+//     }
+//     area.value = localStorage.getItem(+index - 1);
+// }
+//
+// right.onclick = () => {
+//     let index;
+//     for (let key in localStorage) {
+//         if (localStorage.hasOwnProperty(key)) {
+//             if (localStorage.getItem(key) === area.value) {
+//                 index = key;
+//             }
+//         }
+//     }
+//     if (index === localStorage.length.toString) {
+//         return;
+//     }
+//     area.value = localStorage.getItem(+index + 1);
+// }
 
+
+
+// localStorage.clear()
 
 
 
